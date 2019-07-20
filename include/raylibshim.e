@@ -17,7 +17,7 @@ constant C_IMAGE = {
 
 constant
 	shimLoadTexture             = define_c_proc( raylibshim, "+shimLoadTexture", C_STRING & C_POINTER ),
-	shimLoadTextureFromImage    = define_c_proc( raylibshim, "+shimLoadTextureFromImage", C_IMAGE ),
+	shimLoadTextureFromImage    = define_c_proc( raylibshim, "+shimLoadTextureFromImage", C_IMAGE & C_POINTER ),
 $
 
 ifdef BITS64 then
